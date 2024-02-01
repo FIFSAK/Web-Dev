@@ -1,42 +1,182 @@
+body{
+    background: #f0f2f5;
+}
+
 .fb_logo{
-    height: 106px;
+    height: 135px;
     margin: -28px;
+    position: absolute;
+    margin-left: 300px;
+    top: 27%;
 }
 .under_logo_text{
     font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
-    font-size: 24px;
+    font-size: 35px;
     line-height: 28px;
     width: auto;
     font-weight: normal;
+    position: absolute;
+    margin-left: 340px;
+    top: 35%;
+    line-height: 40px;
 }
 .form{
-    width: 200px;
-    height: 150px;
-    background-color: black;
+    font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;;
+    background-color: #fff;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+    box-sizing: border-box;
+    margin: 40px 0 0;
+    padding: 20px 0 28px;
+    width: 480px;
+    height: 450px;
+    text-align: center;
+    position: absolute;
+    top: 20%;
+    right: 300px;
 }
-.inputtext{
+.email-input input {
+    border-radius: 6px;
+    font-size: 20px;
+    font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;;
+    border: 1px solid #dddfe2;
+    height: 60px;
+    margin-bottom: 10px; /* Добавляет отступ снизу каждого элемента */
+}
+
+.email-input {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.login-button button {
+    font-weight: bold;
+    background-color: #1877f2; /* Синий фон кнопки */
+    border: none;
+    border-radius: 6px;
+    font-size: 20px;
+    line-height: 48px;
+    padding: 0; /* Убрать паддинг у самой кнопки */
+    width: 430px;
+    display: inline-block;
+    height: 60px;
+    vertical-align: middle;
+}
+
+.login-button button .button-text {
+    color: white;
+    padding: 0 16px; /* Паддинг для текста */
+    border-radius: 4px; /* Скругление углов для фона текста */
+    /* Убедитесь, что высота меньше высоты кнопки, чтобы сохранить эффект "подушки" */
+}
+
+.forgot-pass a {
+    color: #1877f2; /* Установите предпочитаемый цвет для текста ссылки */
+    text-decoration: none; /* Убирает подчеркивание */
+    display: inline-block; /* Если вы хотите, чтобы ссылка вела себя как блок */
+    margin-top: 10px; /* Добавьте небольшой отступ сверху */
+    font-size: 18px; /* Уменьшите размер шрифта, если нужно */
+    cursor: pointer; /* Изменяет курсор на указатель при наведении */
+}
+
+.forgot-pass a:hover {
+    text-decoration: underline; /* Добавляет подчеркивание при наведении, если нужно */
+}
+
+.new-acc{
+    font-weight: bold;
+    color:white;
+    text-decoration: none;
+    background-color: #42b72a;
+    border: none;
+    border-radius: 6px;
+    font-size: 17px;
+    line-height: 48px;
+    padding: 0 16px;
+    display: block;
+    width: 200px;
+    margin: auto;
+}
+.text-under-form {
+    font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+    font-size: 20px; /* Уменьшите размер шрифта, если это необходимо */
+    text-align: center; /* Выравнивание текста по центру */
+    margin-top: 730px; /* Расстояние от формы до текста */
+    margin-left: 820px;
+    font-weight: normal; /* Шрифт обычной жирности */
+}
+.footer {
+    margin-top: 120px;
+    background-color: #f5f6f7;
+    border-top: 1px solid #dddfe2;
+    padding: 20px 0;
+    font-size: 18px;
+    color: #616770;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Добавлено для переноса элементов, если не хватает места */
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
 
 
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
 
+.footer-links li {
+    margin-right: 10px;
+}
 
+.footer-links a {
+    color: #616770;
+    text-decoration: none;
+}
 
+.footer-meta {
+    text-align: center;
+}
 
+.footer-languages {
+    text-align: right;
+}
 
+.footer-languages ul {
+    list-style: none;
+    display: inline-flex;
+    padding: 0;
+    margin: 0;
+}
 
+.footer-languages ul li {
+    margin-right: 10px;
+}
 
+.footer-languages a {
+    color: #616770;
+    text-decoration: none;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.footer-more-languages {
+    font-weight: bold;
+    font-size: 14px;
+    color: #616770;
+    text-decoration: none;
+}
+.separater{
+    align-items: center;
+    border-bottom: 1px solid #dadde1;
+    display: flex;
+    margin: 20px 16px;
+    text-align: center;
 }
