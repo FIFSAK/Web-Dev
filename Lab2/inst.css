@@ -1,0 +1,13 @@
+body {
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    margin: 0; /* Resets any default margin */
+    background: #f0f2f5; /* Your desired background color */
+}
+
+.phone {
+    height: 581.15px;
+    margin-top: 115px; /* Adjust this value as needed to match the provided image */
+    display: flex;
+    justify-content: center; /* Centers the image inside the .phone div */
+}
