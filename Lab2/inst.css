@@ -5,9 +5,144 @@ body {
     background: #f0f2f5; /* Your desired background color */
 }
 
+.main{
+    position: relative;
+    width: 762.31px;
+    height: 742px;
+    border: solid;
+    margin: 32px;
+    margin-top: -100px;
+}
+
 .phone {
+    position: absolute;
     height: 581.15px;
-    margin-top: 115px; /* Adjust this value as needed to match the provided image */
+    top: 80px;
+    left: -50px;
+}
+
+.box{
+    position: absolute;
+    width: 350px;
+    height: 401.98px;
+    border: solid;
+    border-color: #999999;
+    border-width: 1px;
+    box-shadow: 0 0px 0px 0px;
+    top: 90px;
+    right: 0;
+}
+.box img{
+    position: absolute;
+    width: 175px;
+    left: 25%;
+    top: 45px;
+
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f2f5;
     display: flex;
-    justify-content: center; /* Centers the image inside the .phone div */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.form-container {
+    position: absolute;
+    left: 40px;
+    background: #f0f2f5;
+    width: 250px;
+    top: 140px;;
+}
+
+.input-container {
+    margin-bottom: 15px;
+}
+
+input[type="text"],
+input[type="password"] {
+    font-size: 11px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    outline: none;
+    border-color: #a4d7f5;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background: #5897fb;
+    color: white;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background: #467bc7;
+}
+
+
+.under-box{
+position: absolute;
+width: 350px;
+height: 63px;
+border: solid;
+border-color: #999999;
+border-width: 1px;
+box-shadow: 0 0px 0px 0px;
+top: 520px;
+right: 0px;
+}
+
+.download-app{
+position: absolute;
+bottom: 90px;
+right: 90px;
+}
+
+._aa5q{
+height: 40px;
+position: absolute;
+bottom: 40px;
+right: 180px;
+display: inline;
+margin: 20px;
+}
+._aa6q{
+height: 40px;
+position: absolute;
+bottom: 40px;
+right: 60px;
+display: inline;
+margin: 20px;
+}
+footer {
+position: absolute;
+bottom: 0;
+width: 100%;
+padding: 20px;
+box-sizing: border-box;
+}
+.footer-meta {
+margin-top: 20px;
+text-align: center;
+color: #777;
+
+}
+.footer-meta a {
+text-decoration: none;
+margin-top: 20px;
+text-align: center;
+color: #777;
 }
