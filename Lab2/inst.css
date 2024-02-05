@@ -1,15 +1,16 @@
 body {
     display: flex;
-    justify-content: center; /* Centers content horizontally */
-    margin: 0; /* Resets any default margin */
-    background: #f0f2f5; /* Your desired background color */
+    justify-content: center;
+    margin: 0;
+    background: white;
+    font-family: Arial, sans-serif;
 }
 
-.main{
+.main {
     position: relative;
     width: 762.31px;
     height: 742px;
-    border: solid;
+    /*border: solid;*/
     margin: 32px;
     margin-top: -100px;
 }
@@ -21,18 +22,17 @@ body {
     left: -50px;
 }
 
-.box{
+.box {
     position: absolute;
     width: 350px;
     height: 401.98px;
-    border: solid;
-    border-color: #999999;
-    border-width: 1px;
-    box-shadow: 0 0px 0px 0px;
+    border: 1px solid;
+    border-color: #d9d9d9;
     top: 90px;
     right: 0;
 }
-.box img{
+
+.inst-logo {
     position: absolute;
     width: 175px;
     left: 25%;
@@ -42,7 +42,6 @@ body {
 
 body {
     font-family: Arial, sans-serif;
-    background: #f0f2f5;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -53,7 +52,7 @@ body {
 .form-container {
     position: absolute;
     left: 40px;
-    background: #f0f2f5;
+    background: white;
     width: 250px;
     top: 140px;;
 }
@@ -83,7 +82,7 @@ input[type="submit"] {
     padding: 10px;
     border: none;
     border-radius: 10px;
-    background: #5897fb;
+    background: #4bb4f7;
     color: white;
     cursor: pointer;
 }
@@ -93,56 +92,112 @@ input[type="submit"]:hover {
 }
 
 
-.under-box{
-position: absolute;
-width: 350px;
-height: 63px;
-border: solid;
-border-color: #999999;
-border-width: 1px;
-box-shadow: 0 0px 0px 0px;
-top: 520px;
-right: 0px;
+.under-box {
+    position: absolute;
+    width: 350px;
+    height: 63px;
+    border: solid;
+    border-color: #d9d9d9;
+    border-width: 1px;
+    box-shadow: 0 0px 0px 0px;
+    top: 520px;
+    right: 0px;
+}
+.line{
+    display: flex;
+    flex-direction: row;
+    align-items: center; /* Добавлено для вертикального выравнивания */
 }
 
-.download-app{
-position: absolute;
-bottom: 90px;
-right: 90px;
+.separator {
+    flex-grow: 1; /* Линии растягиваются */
+    border-top: 1px solid #dadde1; /* Изменено на border-top для горизонтальной линии */
+    margin: 0 16px; /* Обновлено для корректного отступа */
 }
 
-._aa5q{
-height: 40px;
-position: absolute;
-bottom: 40px;
-right: 180px;
-display: inline;
-margin: 20px;
+.or-text {
+    white-space: nowrap; /* Добавлено для предотвращения переноса текста */
 }
-._aa6q{
-height: 40px;
-position: absolute;
-bottom: 40px;
-right: 60px;
-display: inline;
-margin: 20px;
+
+.fb{
+    height: auto;
+    max-width: 5%;
+    position: absolute;
+    bottom: 55px;
+    left: 90px;
 }
+.fb-login{
+    font-size: 90%;
+    position: absolute;
+    bottom: 55px;
+    left: 110px;
+    color: #385185;
+}
+
+.stupid{
+    font-size: 70%;
+    position: absolute;
+    bottom: 20px;
+    left: 120px;
+}
+
+.relly{
+    font-size: 80%;
+    position: absolute;
+    bottom: 25px;
+    left: 30px;
+}
+
+.register{
+    font-size: 85%;
+    position: absolute;
+    bottom: 25px;
+    right: 43px;
+    color: #0095F6;
+}
+
+.download-app {
+    position: absolute;
+    bottom: 90px;
+    right: 90px;
+}
+
+._aa5q {
+    height: 40px;
+    position: absolute;
+    bottom: 40px;
+    right: 180px;
+    display: inline;
+    margin: 20px;
+}
+
+._aa6q {
+    height: 40px;
+    position: absolute;
+    bottom: 40px;
+    right: 60px;
+    display: inline;
+    margin: 20px;
+}
+
 footer {
-position: absolute;
-bottom: 0;
-width: 100%;
-padding: 20px;
-box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
 }
+
 .footer-meta {
-margin-top: 20px;
-text-align: center;
-color: #777;
+    margin-top: 20px;
+    text-align: center;
+    color: #777;
 
 }
+
 .footer-meta a {
-text-decoration: none;
-margin-top: 20px;
-text-align: center;
-color: #777;
+    text-decoration: none;
+    margin-top: 20px;
+    text-align: center;
+    color: #777;
 }
