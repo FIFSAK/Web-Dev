@@ -29,11 +29,6 @@ svg {
     height: 20px;
 }
 
-.container {
-    width: 90%;
-    max-width: 1100px;
-    margin: auto;
-}
 
 /* Nav */
 .main-nav {
@@ -42,9 +37,10 @@ svg {
     justify-content: space-between;
     height: 60px;
     font-size: 13px;
-    margin-top: -12px;
-    margin-left: -240px;
+    margin-top: -10px;
+    margin-left: 150px;
 }
+
 .main-nav .logo {
     width: 108px;
 }
@@ -52,6 +48,7 @@ svg {
 .main-nav ul {
     display: flex;
 }
+
 .main-nav ul li {
     padding: 0 10px;
 }
@@ -61,6 +58,7 @@ svg {
 }
 
 .main-nav ul.main-menu {
+    margin-top: 15px;
     flex: 1;
     flex-direction: row;
 }
@@ -69,8 +67,16 @@ svg {
     flex-direction: row;
 }
 
-.right-nav{
-    margin-left: 600px;
+.nav-items {
+    display: flex;
+    justify-content: flex-end; /* Выравнивание элементов по правому краю */
+    gap: 10px; /* Добавляет пространство между элементами */
+}
+
+.right-nav {
+    display: inline-block;
+    margin-right: 10px; /* Добавляет пространство между ссылками */
+    /* Удалите position: absolute и right: 300px; */
 }
 
 .menu-btn {
@@ -108,35 +114,42 @@ svg {
 /* Showcase */
 .showcase {
     width: 100%;
-    height: 400px;
-    background: url('https://i.ibb.co/zGSDGCL/slide1.png') no-repeat center center/cover;
+    height: 500px; /* Высота блока */
+    background: url('https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-Hero-Windows11-GlobalLaunch:VP5-1920x600') no-repeat center center/cover;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    text-align: center;
-    justify-content: flex-end;
-    padding-bottom: 50px;
-    margin-bottom: 20px;
+    align-items: flex-start; /* Выравнивание содержимого по горизонтали влево */
+    justify-content: center; /* Теперь содержимое центрируется по вертикали */
+    text-align: left;
+    padding: 0 50px; /* Отступы справа и слева */
+    margin-bottom: 20px; /* Отступ снизу */
 }
 
-.showcase h2, .showcase p {
-    margin-bottom: 10px;
+.showcase h1, .showcase p {
+    margin-left: 100px;
+    text-align: left; /* Выравнивание текста влево */
+    color: white;
+    max-width: 600px; /* Максимальная ширина текста */
 }
+
 
 .showcase .btn {
-    margin-top: 20px;
+    color: white;
+    margin-left: 100px;
+    background-color: #0067b8;
 }
 
 /* Home cards */
 .home-cards {
+    margin-top: 150px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 20px;
+    gap: 5px;
     margin-bottom: 40px;
 }
 
 .home-cards img {
-    width: 100%;
+    width: 80%;
     margin-bottom: 20px;
 }
 
@@ -152,9 +165,7 @@ svg {
     font-weight: bold;
 }
 
-.home-cards a:hover i {
-    margin-left: 10px;
-}
+
 
 /* Xbox */
 .xbox {
