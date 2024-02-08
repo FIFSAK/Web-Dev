@@ -1,11 +1,3 @@
-{
-    box-sizing: border-box
-;
-    margin: 0
-;
-    padding: 0
-;
-}
 
 .MainBox {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -114,22 +106,22 @@ svg {
 /* Showcase */
 .showcase {
     width: 100%;
-    height: 500px; /* Высота блока */
+    height: 500px;
     background: url('https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/Highlight-Hero-Windows11-GlobalLaunch:VP5-1920x600') no-repeat center center/cover;
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Выравнивание содержимого по горизонтали влево */
-    justify-content: center; /* Теперь содержимое центрируется по вертикали */
+    align-items: flex-start;
+    justify-content: center;
     text-align: left;
-    padding: 0 50px; /* Отступы справа и слева */
-    margin-bottom: 20px; /* Отступ снизу */
+    padding: 0 50px;
+    margin-bottom: 20px;
 }
 
 .showcase h1, .showcase p {
     margin-left: 100px;
-    text-align: left; /* Выравнивание текста влево */
+    text-align: left;
     color: white;
-    max-width: 600px; /* Максимальная ширина текста */
+    max-width: 600px;
 }
 
 
@@ -139,7 +131,6 @@ svg {
     background-color: #0067b8;
 }
 
-/* Home cards */
 .home-cards {
     margin-top: 150px;
     display: grid;
@@ -167,36 +158,6 @@ svg {
 
 
 
-/* Xbox */
-.xbox {
-    width: 100%;
-    height: 350px;
-    background: url('https://i.ibb.co/tBJGPD9/xbox.png') no-repeat center center/cover;
-    margin-bottom: 20px;
-}
-
-.xbox .content {
-    width: 40%;
-    padding: 50px 0 0 30px;
-}
-
-.xbox p, .carbon p {
-    margin: 10px 0 20px;
-}
-
-/* Carbon */
-.carbon {
-    width: 100%;
-    height: 350px;
-    background: url('https://i.ibb.co/72cgtsz/carbon.jpg') no-repeat center center/cover;
-}
-
-.carbon .content {
-    width: 55%;
-    padding: 100px 0 0 30px;
-}
-
-/* Follow */
 .follow {
     display: flex;
     align-items: center;
