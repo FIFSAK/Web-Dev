@@ -1,9 +1,11 @@
 export interface Product {
+    id: number;
     image: string;
     name: string;
     description: string;
     rating: number;
     link: string;
+    like: number;
 }
 
 export const products = [
@@ -16,7 +18,9 @@ export const products = [
             'быстрая зарядка: Да\n' +
             'разъем подключения: USB Type-C',
         rating: 4.5,
-        link: "https://kaspi.kz/shop/p/apple-20w-usb-c-power-adapter-belyi-100984093/?c=750000000"
+        link: "https://kaspi.kz/shop/p/apple-20w-usb-c-power-adapter-belyi-100984093/?c=750000000",
+        category: "phone",
+        like: 0,
     },
     {
         id: 2,
@@ -24,7 +28,9 @@ export const products = [
         name: 'Смартфон Apple iPhone 13 128Gb Midnight черный',
         description: "технология NFC: Да\nцвет: черный\nтип экрана: OLED, Super Retina XDR\nдиагональ: 6.1 дюйм\nразмер оперативной памяти: 4 ГБ\nпроцессор: 6-ядерный Apple A15 Bionic\nобъем встроенной памяти: 128.0 ГБ\nемкость аккумулятора: 3095.0 мАч",
         rating: 5,
-        link: "https://kaspi.kz/shop/p/apple-iphone-14-128gb-chernyi-106363023/?c=750000000"
+        link: "https://kaspi.kz/shop/p/apple-iphone-14-128gb-chernyi-106363023/?c=750000000",
+        category: "phone",
+        like: 0,
     },
     {
         id: 3,
@@ -39,7 +45,9 @@ export const products = [
             "объем встроенной памяти: 128.0 ГБ\n" +
             "емкость аккумулятора: 3279.0 мАч",
         rating: 4.5,
-        link: "https://kaspi.kz/shop/p/apple-iphone-14-128gb-chernyi-106363023/?c=750000000"
+        link: "https://kaspi.kz/shop/p/apple-iphone-14-128gb-chernyi-106363023/?c=750000000",
+        category: "phone",
+        like: 0,
     },
     {
         id: 4,
@@ -54,7 +62,9 @@ export const products = [
             "объем встроенной памяти: 256.0 ГБ\n" +
             "емкость аккумулятора: 5000.0 мАч",
         rating: 4.5,
-        link: "https://kaspi.kz/shop/p/apple-iphone-14-128gb-chernyi-106363023/?c=750000000"
+        link: "https://kaspi.kz/shop/p/apple-iphone-14-128gb-chernyi-106363023/?c=750000000",
+        category: "phone",
+        like: 0,
     },
     {
         id: 5,
@@ -66,7 +76,9 @@ export const products = [
             "интерфейсы: Bluetooth\n" +
             "время работы: 3-7 дней",
         rating: 5,
-        link: "https://kaspi.kz/shop/p/colmi-p28-plus-zolotistyi-bezhevyi-106175099/?c=750000000"
+        link: "https://kaspi.kz/shop/p/colmi-p28-plus-zolotistyi-bezhevyi-106175099/?c=750000000",
+        category: "whatch",
+        like: 0,
     },
     {
         id: 6,
@@ -77,7 +89,9 @@ export const products = [
             "материал: силикон, ,пластик\n" +
             "совместимые модели: iPhone 13",
         rating: 5,
-        link: "https://kaspi.kz/shop/p/oem-dlja-apple-iphone-13-prozrachnyi-108272841/?c=750000000"
+        link: "https://kaspi.kz/shop/p/oem-dlja-apple-iphone-13-prozrachnyi-108272841/?c=750000000",
+        category: "accessory",
+        like: 0,
     },
     {
         id: 7,
@@ -87,7 +101,9 @@ export const products = [
             "тип: кабель\n" +
             "длина: 1.0 м",
         rating: 4,
-        link: "https://kaspi.kz/shop/p/kabel-apple-usb-type-c---lightning-1-m-40500508/?c=750000000"
+        link: "https://kaspi.kz/shop/p/kabel-apple-usb-type-c---lightning-1-m-40500508/?c=750000000",
+        category: "accessory",
+        like: 0,
     },
     {
         id: 8,
@@ -99,7 +115,9 @@ export const products = [
             "интерфейсы: Bluetooth\n" +
             "время работы: 3-7 дней",
         rating: 4.5,
-        link: "https://kaspi.kz/shop/p/colmi-p28-plus-chernyi-106096505/?c=750000000"
+        link: "https://kaspi.kz/shop/p/colmi-p28-plus-chernyi-106096505/?c=750000000",
+        category: "whatch",
+        like: 0,
     },
     {
         id: 9,
@@ -111,7 +129,9 @@ export const products = [
             "назначение: дисплей\n" +
             "вид покрытия: противоударное",
         rating: 4.5,
-        link: "https://kaspi.kz/shop/p/steklo-dlja-apple-iphone-11-108450817/?c=750000000"
+        link: "https://kaspi.kz/shop/p/steklo-dlja-apple-iphone-11-108450817/?c=750000000",
+        category: "accessory",
+        like: 0,
     },
     {
         id: 10,
@@ -122,7 +142,9 @@ export const products = [
             "место крепления держателя: универсальное, ,настольное\n" +
             "способ крепления держателя: зажим",
         rating: 4.5,
-        link: "https://kaspi.kz/shop/p/ali17express-2291-104227273/?c=750000000"
+        link: "https://kaspi.kz/shop/p/ali17express-2291-104227273/?c=750000000",
+        category: "accessory",
+        like: 0,
     },
 
 

@@ -1,11 +1,12 @@
 <app-top-bar></app-top-bar>
 
 <div class="container">
-  <router-outlet></router-outlet>
+    <router-outlet></router-outlet>
 </div>
 
-<!-- 
-Copyright Google LLC. All Rights Reserved.
-Use of this source code is governed by an MIT-style license that
-can be found in the LICENSE file at https://angular.io/license
--->
+<!--list of categorys-->
+<ul>
+    <div *ngFor="let category of categories">
+        <a [routerLink]="['/products', category]">{{ category }}</a>
+    </div>
+</ul>

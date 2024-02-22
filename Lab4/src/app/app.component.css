@@ -1,8 +1,20 @@
 
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 0;
+}
 
-
-/*
-Copyright Google LLC. All Rights Reserved.
-Use of this source code is governed by an MIT-style license that
-can be found in the LICENSE file at https://angular.io/license
-*/
+a {
+    border: 1px solid #1976d2;
+    background-color: #1976d2;
+    font-size: 50px;
+    border-radius: 7px;
+    color: white;
+    list-style-type: none;
+    margin: 40px;
+    padding: 0;
+    overflow: hidden;
+}
