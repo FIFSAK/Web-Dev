@@ -19,7 +19,7 @@ export const products = [
             'разъем подключения: USB Type-C',
         rating: 4.5,
         link: "https://kaspi.kz/shop/p/apple-20w-usb-c-power-adapter-belyi-100984093/?c=750000000",
-        category: "phone",
+        category: "accessory",
         like: 0,
     },
     {
@@ -77,7 +77,7 @@ export const products = [
             "время работы: 3-7 дней",
         rating: 5,
         link: "https://kaspi.kz/shop/p/colmi-p28-plus-zolotistyi-bezhevyi-106175099/?c=750000000",
-        category: "whatch",
+        category: "watch",
         like: 0,
     },
     {
@@ -116,7 +116,7 @@ export const products = [
             "время работы: 3-7 дней",
         rating: 4.5,
         link: "https://kaspi.kz/shop/p/colmi-p28-plus-chernyi-106096505/?c=750000000",
-        category: "whatch",
+        category: "watch",
         like: 0,
     },
     {
