@@ -1,0 +1,20 @@
+
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 0;
+}
+
+a {
+    border: 1px solid #1976d2;
+    background-color: #1976d2;
+    font-size: 50px;
+    border-radius: 7px;
+    color: white;
+    list-style-type: none;
+    margin: 40px;
+    padding: 0;
+    overflow: hidden;
+}

@@ -1,0 +1,19 @@
+<h2>Products</h2>
+
+<div *ngFor="let product of products">
+
+    <h3>
+        <a [title]="product.name + ' details'" href="http://localhost:4200/products/computer/{{product.id}}">
+            {{ product.name }}
+        </a>
+    </h3>
+    <img src="{{product.image}}" alt="product-image">
+    <p *ngIf="product.description">
+        Description: {{ product.description }}
+    </p>
+    <h4>rating: {{ product.rating }}/5</h4>
+    <button class="like" (click)="like(product)">likes: {{ product.like }}</button>
+    <button type="button" (click)="share(product.link)">Share</button>
+    <button (click)="remove(product)">Remove</button>
+
+</div>

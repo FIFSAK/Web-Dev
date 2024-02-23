@@ -1,0 +1,12 @@
+<app-top-bar></app-top-bar>
+
+<div class="container">
+    <router-outlet></router-outlet>
+</div>
+
+<!-- Условное отображение списка категорий -->
+<ul *ngIf="showCategories">
+    <div *ngFor="let category of categories">
+        <a [routerLink]="['/products', category]">{{ category }}</a>
+    </div>
+</ul>
