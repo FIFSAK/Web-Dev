@@ -12,7 +12,7 @@ export class ProductListComponent implements OnInit {
     products = [...products];
     category!: string | null;
 
-    constructor(private route: ActivatedRoute) {}
+    constructor(public route: ActivatedRoute) {}
     likedProducts = new Set<number>(); // Предполагаем, что у каждого продукта есть уникальный идентификатор типа number
 
     ngOnInit() {
