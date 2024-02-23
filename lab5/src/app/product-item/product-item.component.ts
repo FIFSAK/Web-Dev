@@ -1,14 +1,11 @@
 import {Component, OnInit} from '@angular/core';
-import {Product, products} from "../products";
-import {ActivatedRoute} from "@angular/router";
+import {Product} from "../products";
 import {ProductListComponent} from "../product-list/product-list.component";
 
 @Component({
     selector: 'app-product-item',
-    standalone: true,
-    imports: [],
     templateUrl: './product-item.component.html',
-    styleUrl: './product-item.component.css'
+    styleUrls: ['../product-list/product-list.component.css', './product-item.component.css']
 })
 export class ProductItemComponent extends ProductListComponent implements OnInit {
     item!: Product;

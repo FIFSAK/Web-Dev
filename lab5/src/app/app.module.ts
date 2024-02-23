@@ -16,12 +16,13 @@ import {ProductItemComponent} from "./product-item/product-item.component";
       {path: 'products/:category', component: ProductListComponent},
       {path: 'products/:category/:id', component: ProductItemComponent},
     ]),
-    ProductItemComponent
+
   ],
   declarations: [
     AppComponent,
     TopBarComponent,
-    ProductListComponent
+    ProductListComponent,
+    ProductItemComponent
   ],
   bootstrap: [
     AppComponent
