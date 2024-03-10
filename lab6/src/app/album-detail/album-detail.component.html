@@ -1,1 +1,13 @@
-<h1>{{album?.id}} {{album?.title}} {{album?.userId}}</h1>
+<button (click)="backClicked()">back</button>
+<div *ngIf="!editFlag">
+  <h1>{{ album.id }} {{ album.title }} {{ album.userId }}</h1>
+  <button (click)="editing()">Edit</button>
+</div>
+<div *ngIf="editFlag">
+  <h1>{{ album.id }}
+    <input [(ngModel)]="newTitle" value="{{album.title}}">
+    {{ album.userId }}
+  </h1>
+  <button (click)="save()">Save</button>
+</div>
+<a routerLink="photos">photo</a>

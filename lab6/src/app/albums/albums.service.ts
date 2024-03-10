@@ -2,6 +2,7 @@ import {Injectable} from '@angular/core';
 import {HttpClient} from "@angular/common/http";
 import {catchError, Observable, throwError} from 'rxjs';
 import {Albums} from "../../models/albums";
+import {Photos} from "../../models/photos";
 
 
 @Injectable({
@@ -34,7 +35,8 @@ export class AlbumsService {
       .pipe(catchError((error) => throwError(error)));
   }
 
-  // getPhotos(id: number): Observable<IPhotos[]> {
-  //   return this.http.get<IPhotos[]>(`url/${id}/photos`);
-  // }
+  getPhotos(id: number): Observable<Photos[]> {
+    console.log(`${this.url}/${id}/photos`);
+    return this.http.get<Photos[]>(`${this.url}/${id}/photos`);
+  }
 }
