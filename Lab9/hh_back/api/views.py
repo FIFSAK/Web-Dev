@@ -1,6 +1,5 @@
 from django.http import HttpResponse
-from django.shortcuts import render
-from rest_framework import serializers
+from django.core import serializers
 
 from .models import Company, Vacancy
 
@@ -21,7 +20,7 @@ def get_companies(request, pk=None):
 def get_vacancies(request, pk_c=None, pk=None):
     if request.method == 'GET':
         if pk_c:
-            vacancies = Vacancy.objects.filter(company=pk)
+            vacancies = Vacancy.objects.filter(company=pk_c)
         elif pk:
             vacancies = Vacancy.objects.filter(id=pk)
         else:
