@@ -1,29 +1,17 @@
-"""
-URL configuration for hh_back project.
-
-The `urlpatterns` list routes URLs to views. For more information please see:
-    https://docs.djangoproject.com/en/5.0/topics/http/urls/
-Examples:
-Function views
-    1. Add an import:  from my_app import views
-    2. Add a URL to urlpatterns:  path('', views.home, name='home')
-Class-based views
-    1. Add an import:  from other_app.views import Home
-    2. Add a URL to urlpatterns:  path('', Home.as_view(), name='home')
-Including another URLconf
-    1. Import the include() function: from django.urls import include, path
-    2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
-"""
 from django.contrib import admin
 from django.urls import path
+from api.views import get_companies, get_vacancies
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-
+    path('api/companies/', get_companies),
+    path('api/companies/<int:pk>/', get_companies),
+    path('api/companies/<int:pk_c>/vacancies/', get_vacancies),
+    path('api/vacancies/', get_vacancies),
+    path('api/vacancies/<int:pk>', get_vacancies),
+    path('api/vacancies/top_ten/', get_top_ten_vacancies),
 ]
-# /api/companies - List of all Companies
-# /api/companies/<int:id>/ - Get one Company
-# /api/companies/<int:id>/vacancies/ - List of Vacancies by Company
+
 # /api/vacancies/ - List of all Vacancies
 # /api/vacancies/<int:id>/ - Get one Vacancy
 # /api/vacancies/top_ten/ - List of top 10 vacancies sorted by decreasing salary
