@@ -13,4 +13,3 @@ class VacancySerializer(serializers.Serializer):
     name = serializers.CharField(max_length=100)
     description = serializers.CharField()
     salary = serializers.FloatField()
-    company = serializers.PrimaryKeyRelatedField(read_only=True)
